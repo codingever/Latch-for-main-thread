@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  * @author codingever
  */
 public class RaceCondition {
-    private static volatile boolean done;
+    private static boolean done;
 
     public static void main(String[] args) throws InterruptedException {
         new Thread(() -> {

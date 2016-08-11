@@ -4,6 +4,16 @@ import java.util.concurrent.TimeUnit;
  * Check race condition of two threads and verify that java doesn't guarantee
  * correct behavior in case no synchronized shared resources.
  *
+ * In case using OS Windows run this program twice:
+ * - w/out any flags
+ * - add -server flag
+ *
+ * In case using Mac OS run this program twice:
+ * - w/out any flags
+ * - add -d32 flag
+ *
+ * and feel the difference.
+ *
  * @author codingever
  */
 public class RaceCondition {
